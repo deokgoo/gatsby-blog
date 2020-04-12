@@ -5,15 +5,17 @@ const Profile = () => {
   const data = useStaticQuery(graphql`
     query ProfileQuery {
       site {
-        siteProfileData {
-          profile_img,
-          profile_name,
-          profile_description
+        siteMetadata {
+          profile {
+            profile_img,
+            profile_name,
+            profile_description
+          }
         }
       }
     }
   `);
-  let { profile_img, profile_name, profile_description } = data.site.siteProfileData;
+  let { profile_img, profile_name, profile_description } = data.site.siteMetadata.profile;
   return (
     <div className="profile" style={{display: 'flex', justifyContent: 'center', fontFamily: 'Nanum Pen Script', fontWeight: 'bold', fontSize: '2rem'}}>
       <img className="profile__img" style={{height: '100px', width: '100px', borderRadius: '50%'}} src={profile_img}/>
