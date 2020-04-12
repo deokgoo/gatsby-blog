@@ -26,10 +26,11 @@ const IndexPage: React.FC = () => {
   const data = useStaticQuery(LatestPostListQuery);
   return (
     <Layout>
+      <>
       <SEO title="Home" />
       <h1>최근 작성한 게시글 목록</h1>
       <ul>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
+        {data.allMarkdownRemark.edges.map(({ node }: any) => (
           <li key={node.id}>
             <h2>
               <Link to={node.frontmatter.path}>{node.frontmatter.title}</Link>
@@ -40,6 +41,7 @@ const IndexPage: React.FC = () => {
           </li>
         ))}
       </ul>
+      </>
     </Layout>
   )
 };

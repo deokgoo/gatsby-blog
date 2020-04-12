@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `frontend blog`,
+    title: `duck9 blog`,
     description: `Web frontend blog`,
-    author: `@gatsbyjs`,
+    repo: 'deokgoo/gatsby-blog',
+    author: `deokgoo`,
   },
   plugins: [
     `gatsby-plugin-typescript`,

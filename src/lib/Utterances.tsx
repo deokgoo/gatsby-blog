@@ -1,4 +1,5 @@
 import React, { createRef, useLayoutEffect } from 'react';
+import {graphql, useStaticQuery} from 'gatsby';
 
 const src = 'https://utteranc.es/client.js';
 
