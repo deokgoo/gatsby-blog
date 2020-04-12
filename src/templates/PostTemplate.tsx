@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
+import Utterances from '../lib/Utterances';
 
 const PostTemplate: React.FC = React.memo((props: any) => {
 	const { title, date, html } = props.pageContext;
@@ -9,6 +10,7 @@ const PostTemplate: React.FC = React.memo((props: any) => {
 			<h4>{date}</h4>
 			<hr />
 			<div dangerouslySetInnerHTML={{ __html: html }} />
+			<Utterances repo="deokgoo/gatsby-blog" />
 		</Layout>
 	);
 });
