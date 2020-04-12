@@ -19,20 +19,12 @@ const Layout = (props: propsInterface) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div style={{margin: `0 auto`, maxWidth: 960, padding: `0 1.0875rem 1.45rem`, minHeight: '85vh'}}>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
+      <footer>
+        © {new Date().getFullYear()}, Built with Gatsby d9 techBlog
+      </footer>
     </>
   )
 };
