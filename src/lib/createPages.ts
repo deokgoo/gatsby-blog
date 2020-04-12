@@ -11,7 +11,9 @@ export const createPages = async ({ actions, graphql }: CreatePagesArgs) => {
                         node {
                             html
                             frontmatter {
-                                title
+                                title,
+                                path,
+                                date
                             }
                         }
                     }
@@ -26,7 +28,7 @@ export const createPages = async ({ actions, graphql }: CreatePagesArgs) => {
 	// @ts-ignore
 	data.allMarkdownRemark.edges.forEach(({ node }: any) => {
 		createPage({
-			path: node.frontmatter.title,
+			path: node.frontmatter.path,
 			context: {
 				html: node.html,
 				title: node.frontmatter.title,
