@@ -30,6 +30,7 @@ const IndexPage: React.FC = () => {
     <Layout>
       <>
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&display=swap" rel="stylesheet" />
         <SEO title="d9tech" />
         <Profile />
         <ul>
