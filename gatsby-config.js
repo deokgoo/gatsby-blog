@@ -10,6 +10,11 @@ module.exports = {
       profile_description: '발전하는 웹 프론트 개발자입니다.'
     }
   },
+  head: {
+    link: [
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&display=swap' }
+    ]
+  },
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-sass`,
