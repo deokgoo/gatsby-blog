@@ -1,8 +1,8 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 
-import Header from "./header"
-import "./layout.scss"
+import Header from './header'
+import './layout.scss'
 
 const Layout = (props: propsInterface) => {
   let { children } = props;
@@ -18,11 +18,11 @@ const Layout = (props: propsInterface) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div style={{margin: `0 auto`, maxWidth: 960, padding: `0 1.0875rem 1.45rem`, minHeight: '85vh'}}>
+      <Header siteTitle={data.site.siteMetadata.title}/>
+      <div style={{ margin: `0 auto`, maxWidth: 960, padding: `0 1.0875rem 1.45rem`, minHeight: '85vh' }}>
         <main>{children}</main>
       </div>
-      <footer>
+      <footer style={{textAlign: 'center', marginTop: '1.5rem', marginBottom: '1.5rem'}}>
         © {new Date().getFullYear()}, Built with Gatsby d9 techBlog
       </footer>
     </>

@@ -1,0 +1,32 @@
+$base-space: 1rem;
+
+.cardBoard {
+  border: #dddddd solid $base-space/10;
+  padding: $base-space;
+  margin-bottom: $base-space;
+  -webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+
+  .cardBoard__title {
+    color: #ff9387;
+    font-size: 1.6rem;
+  }
+
+  .cardBoard__date {
+    color: gray;
+    font-size: 1rem;
+    text-align: right;
+    margin-right: 1rem;
+  }
+
+  .cardBoard__description {
+    margin-top: $base-space/2;
+    color: black;
+    font-size: 1rem;
+  }
+}
+
+.cardBoard:hover {
+  cursor: pointer;
+}
