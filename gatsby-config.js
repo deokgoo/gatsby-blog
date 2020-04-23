@@ -7,7 +7,7 @@ module.exports = {
     profile: {
       profile_img: 'https://avatars3.githubusercontent.com/u/20182365?s=400&u=b42f8d09da0bbba0a1aa030e2f2a184ecad8510f&v=4',
       profile_name: 'deokgoo',
-      profile_description: '발전하는 웹 프론트 개발자입니다.'
+      profile_description: '발전하는 웹 프론트 개발자'
     }
   },
   plugins: [
