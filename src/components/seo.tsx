@@ -65,8 +65,8 @@ const SEO = (props: propsTypes) => {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ])}
-    />
+      ])}>
+    </Helmet>
   )
 };
 
