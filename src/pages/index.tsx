@@ -33,6 +33,7 @@ const IndexPage: React.FC = () => {
       <>
       <Helmet>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&display=swap"/>
+        <meta name="google-site-verification" content="aDb3jegnszW2WX_61vjA-FLc9XahqIPwRNi-Qwfj6oI" />
       </Helmet>
         <SEO title="d9tech" />
         <Profile />
