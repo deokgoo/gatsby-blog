@@ -27,7 +27,7 @@ tag: react, vue, component
 
 ## <div style="color: #fa4659"> 본론으로
 
->기본적으로 Component가 들고있는 것은 5가지이다.
+>기본적으로 Component가 5가지를 가지고있다.
 
 >> - render
 >> - state
