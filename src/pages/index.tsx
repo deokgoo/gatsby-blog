@@ -3,8 +3,9 @@ import { graphql, Link, useStaticQuery } from 'gatsby';
 
 import Layout from '../components/layout';
 import Profile from '../components/profile';
-import SEO from "../components/seo"
+import SEO from '../components/seo'
 import CardBoard from '../components/CardBoard';
+import Helmet from 'react-helmet';
 
 const LatestPostListQuery = graphql`
         query LatestPostListQuery {
@@ -30,6 +31,9 @@ const IndexPage: React.FC = () => {
   return (
     <Layout>
       <>
+      <Helmet>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&display=swap"/>
+      </Helmet>
         <SEO title="d9tech" />
         <Profile />
         {data.allMarkdownRemark.edges.map(({ node }: any) => (
