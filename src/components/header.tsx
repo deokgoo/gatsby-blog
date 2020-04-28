@@ -6,6 +6,9 @@ const Header = (props: { siteTitle: string }) => {
   let { siteTitle } = props;
   return (
     <header style={{ background: `black`, marginBottom: `1.45rem`, minHeight: '10vh' }}>
+      <Helmet>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&display=swap"/>
+      </Helmet>
       <div style={{
         margin: `0 auto`,
         maxWidth: 960,

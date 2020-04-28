@@ -20,12 +20,12 @@ const PostTemplate: React.FC = React.memo((props: any) => {
 	return (
 		<Layout>
 			<>
-        <SEO title={title} />
+            <SEO title={title} />
 				<h2>{title}</h2>
 				<h4>{date}</h4>
 				<hr />
 				<div dangerouslySetInnerHTML={{ __html: html }} />
-				<Utterances repo={data.site.siteMetadata.repo} />
+            <Utterances repo={data.site.siteMetadata.repo} />
 			</>
 		</Layout>
 	);
